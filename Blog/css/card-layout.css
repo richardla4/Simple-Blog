@@ -1,0 +1,29 @@
+.content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "1"
+    "2"
+    "3"
+    "4";
+}
+
+.card {
+    grid-area: 1;
+}
+
+@media (min-width:600px){
+    .content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "1 2"
+        "3 4";
+    }
+
+    .card {
+        grid-area: 1;
+    }
+}
